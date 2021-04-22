@@ -9,7 +9,7 @@ function Hero() {
             <video src="/videos/video-3.mp4" autoPlay loop muted/>
             <h1>Eric Tovar</h1>
             <p>Software Developer</p> 
-            <div className="hero-btns">
+            {/* <div className="hero-btns">
                 <Button className='btns' 
                 buttonStyle='btn--outline'
                 buttonSize='btn--large'>
@@ -22,7 +22,7 @@ function Hero() {
                     >
                     WATCH Trailer <i className='far fa-play-circle' />
                 </Button>
-                </div>           
+                </div>            */}
         </div>
     )
 }

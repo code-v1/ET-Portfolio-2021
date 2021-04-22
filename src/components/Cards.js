@@ -4,14 +4,16 @@ import './Cards.css'
 import img from './images/img-9.jpg';
 import img2 from './images/img-2.jpg';
 import img3 from './images/Community-connect.PNG'
-import { Link, NavLink, BrowserRouter } from 'react-router-dom';
+import { Link, NavLink, BrowserRouter, Route } from 'react-router-dom';
+import { Button } from './Button';
+
 
 
 
 function Cards() {
     return (
         <div className='Cards'>
-            <h1>Check Out these EPIC Destinations!</h1>
+            <h1>Projects</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
@@ -28,14 +30,15 @@ function Cards() {
                         path='/services'
                         />      
                     </ul>
+                        
                     <ul className="cards__items">
                         <CardItem 
                         src={img3}
-                        text="Explore the hidden waterfall deep inside the Amazon Jungle"
+                        text="Check it out"
                         label="Adventure"
-                        path= "/"
-                        path={(e) => (window.open('https://community-connection.herokuapp.com/') )}
+                        
                         />
+                        
                         
                         
                         <CardItem 

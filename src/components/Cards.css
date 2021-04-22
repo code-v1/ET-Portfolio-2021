@@ -2,6 +2,17 @@
     padding: 4rem;
     background: #fff ;
   }
+
+  button {
+    background: transparent;
+    border: none;
+  }
+
+  a {
+    color: #fff;
+    width: 200px;
+    height: 300px;
+  }
   
   h1 {
     text-align: center;
