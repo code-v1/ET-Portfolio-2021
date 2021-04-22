@@ -2,7 +2,10 @@ import React from 'react'
 import CardItem from './CardItem'
 import './Cards.css'
 import img from './images/img-9.jpg';
-import img2 from './images/img-2.jpg'
+import img2 from './images/img-2.jpg';
+import img3 from './images/Community-connect.PNG'
+import { Link, NavLink, BrowserRouter } from 'react-router-dom';
+
 
 
 function Cards() {
@@ -27,11 +30,14 @@ function Cards() {
                     </ul>
                     <ul className="cards__items">
                         <CardItem 
-                        src={img}
+                        src={img3}
                         text="Explore the hidden waterfall deep inside the Amazon Jungle"
                         label="Adventure"
-                        path='/services'
+                        path= "/"
+                        path={(e) => (window.open('https://community-connection.herokuapp.com/') )}
                         />
+                        
+                        
                         <CardItem 
                         src={img2}
                         text="Travel through the isldands of bali in a private cruise"
