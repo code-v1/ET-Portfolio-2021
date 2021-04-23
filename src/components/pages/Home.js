@@ -3,13 +3,15 @@ import '../../App.css'
 import Cards from '../Cards';
 import Hero from '../Hero'
 import Footer from '../Footer';
-import Card1 from '../pages/Card1'
+import Cards2 from '../Cards2'
+import ContactForm from '../Contact-form'
 
 function Home() {
     return (
         <>
             <Hero />
-            <Card1 />
+            
+            <Cards2 />
             <Cards />
             <Footer />
         </>

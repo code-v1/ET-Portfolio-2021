@@ -9,10 +9,10 @@ import img2 from './images/img-2.jpg';
 
 
 
-function Cards() {
+function Cards2() {
     return (
         <div className='Cards'>
-            <h1>Projects</h1>
+            <h1>Professional Experience</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
@@ -56,4 +56,4 @@ function Cards() {
     )
 }
 
-export default Cards
+export default Cards2

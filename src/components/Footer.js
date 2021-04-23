@@ -7,14 +7,12 @@ function Footer() {
     return (
         <div className='footer-container'>
             <section className='footer-subscription'>
-                <p className="footer-subscription-heading">
-                    Connect with me
-                </p>
+                
                 
                 <div className="input-areas">
                     <form>
-                        <input className="footer-input" type="email" name="email" placeholder="Your Email"/>
-                        <Button buttonStyle='btn--outline'>Send</Button>
+                        
+                        <Button buttonStyle='btn--outline'><a href="https://us1.list-manage.com/contact-form?u=6b4ea06472d2b1a199b42bbd3&form_id=7e979584c4c408d0f7ad77f25bb56362">Connect</a></Button>
                         
                     </form>
                 </div>
