@@ -1,12 +1,19 @@
 import React from 'react'
 import '../../App.css'
-import SimpleList from '../List'
+import Cards from '../Cards';
+import Cards2 from '../Cards2'
 
 
 
-export default function Services() {
+ function Services() {
     return (
-    <SimpleList />
-    
+        <>
+    <Cards2 />
+    <Cards />
+        
+     </>
+
     );
 }
+
+export default Services;

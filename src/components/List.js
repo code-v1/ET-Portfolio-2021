@@ -1,40 +1,57 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
-// import InboxIcon from '@material-ui/icons/Inbox';
-// import DraftsIcon from '@material-ui/icons/Drafts';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-    maxWidth: 360,
-    backgroundColor: theme.palette.background.paper,
-  },
-}));
+import CardItem1 from './CardItem1'
+import CardItem2 from './CardItem2'
+import './Cards.css'
+import img from './images/Community-connect.PNG';
+import img2 from './images/img-2.jpg';
 
-function ListItemLink(props) {
-  return <ListItem button component="a" {...props} />;
+
+function Cards() {
+    return (
+        <div className='Cards'>
+            <h1>Projects</h1>
+            <div className="cards__container">
+                <div className="cards__wrapper">
+                    <ul className="cards__items">
+                        <CardItem1 
+                        src={img}
+                        text="Community Connection; web app built using the django framework "
+                        label="Adventure"
+                        path='/services'
+                        />
+                        <CardItem2 
+                        src={img2}
+                        text="Travel through the isldands of bali in a private cruise"
+                        label="luxury"
+                        path='/services'
+                        />      
+                    </ul>
+                        
+                    {/* <ul className="cards__items">
+                        <CardItem 
+                        src={img3}
+                        text="Check it out"
+                        label="Adventure"
+                        
+                        />
+                        <CardItem 
+                        src={img2}
+                        text="Travel through the isldands of bali in a private cruise"
+                        label="luxury"
+                        path='/services'
+                        /> 
+                        <CardItem 
+                        src={img2}
+                        text="Travel through the isldands of bali in a private cruise"
+                        label="luxury"
+                        path='/services'
+                        />        
+                    </ul> */}
+                </div>
+            </div>
+        </div>
+    )
 }
 
-export default function SimpleList() {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      
-      <Divider />
-      <List component="nav" aria-label="secondary mailbox folders">
-        <ListItem button>
-          <ListItemText primary="Trash" />
-        </ListItem>
-        <ListItemLink href="#simple-list">
-          <ListItemText primary="Spam" />
-        </ListItemLink>
-      </List>
-    </div>
-  );
-}
+export default Cards
